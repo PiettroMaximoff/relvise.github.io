@@ -110,36 +110,27 @@ if (document.documentElement.clientWidth > 991.98) {
 /*=============== ACCORDION ===============*/
 const Column = document.querySelectorAll('.column')
 
-// 1. Выбор каждого элемента
 Column.forEach((item) => {
     const footerHeader = item.querySelector('.column__header')
 
-    // 2. Выберите каждый клик заголовка
     footerHeader.addEventListener('click', () => {
-        // 7. Создать переменную
         const openItem = document.querySelector('.column-open')
 
-        // 5. Вызов функции toggle item
         toggleItem(item)
 
-        // 8. Проверить, существует ли класс
         if (openItem && openItem !== item) {
             toggleItem(openItem)
         }
     })
 })
 
-// 3. Создать функцию постоянного типа
 const toggleItem = (item) => {
-    // 3.1 Создать переменную
     const columnList = item.querySelector('.column__list')
 
-    // 6. Если существует другой элемент, accorion-open, который удаляет ваш класс
     if (item.classList.contains('column-open')) {
         columnList.removeAttribute('style')
         item.classList.remove('column-open')
     } else {
-        // 4. Агрегар эль высота максимо дель содержание
         columnList.style.height = columnList.scrollHeight + 'px'
         item.classList.add('column-open')
     }
