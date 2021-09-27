@@ -1517,13 +1517,16 @@ body._touch .menu__link {
   }
 }
 .column-open .column__icon {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
 }
 .column__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1545,8 +1548,8 @@ body._touch .menu__link {
     width: 24px;
     height: 24px;
     position: relative;
-    -webkit-transition: all 0.25s ease 0s;
-    transition: all 0.25s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
   }
   .column__icon img {
     position: absolute;
