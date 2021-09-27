@@ -1,0 +1,48 @@
+@import 'reset'
+@import 'variables'
+
+*, *::before, *::after
+    box-sizing: border-box
+
+body
+    font-family: 'Montserrat', sans-serif
+    color: $text-color
+
+    &._lock // Страница не скроллица при открытии меню
+        overflow: hidden
+
+    &._touch
+        .menu__list
+            & > li
+                display: flex
+                align-items: center
+        .menu__link
+            flex: 1 1 auto
+
+/* --- footer прижат к низу --- */
+.wrapper
+    max-width: $maxWidth
+    margin: 0 auto
+    min-height: 100%
+    overflow: hidden
+    display: flex
+    flex-direction: column
+
+.container
+    max-width: $maxWidthContainer
+    margin: 0 auto
+    padding: 0 15px
+
+.page
+    flex: 1 1 auto
+    background-color: #FAFAFA
+
+@import 'menu'
+@import 'header'
+@import 'features'
+@import 'experience'
+@import 'practice'
+@import 'about'
+@import 'brands'
+@import 'getintouch'
+@import 'footer'

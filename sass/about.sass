@@ -1,0 +1,119 @@
+.about
+    padding: 100px 0 136px
+    background: $light-text-color
+    @media (max-width: $md2)
+        padding: 50px 0 76px
+
+    &__container
+        display: flex
+        flex-direction: column
+        align-items: center
+
+    &__title
+        text-align: center
+        margin-bottom: 15px
+
+    &__text
+        text-align: center
+        max-width: 511px
+        margin-bottom: 100px
+        @media (max-width: $md2)
+            margin-bottom: 50px
+
+    &__row
+        width: 100%
+        display: flex
+        justify-content: space-between
+        @media (max-width: $md2)
+            flex-direction: column
+            align-items: center
+
+    &__video
+        position: relative
+        width: 597px
+        height: 442px
+        img
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            object-fit: cover
+            z-index: 2
+        @media (max-width: $md2)
+            width: 497px
+            height: 342px
+        @media (max-width: $md3)
+            width: 397px
+            height: 242px
+        @media (max-width: $md4)
+            width: 310px
+            height: 190px
+
+    &__cover
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.58%, rgba(56, 56, 56, 0.84) 100%)
+        z-index: 3
+        @include anime(0.2s, 0s)
+
+    &__btn
+        position: absolute
+        width: 97.6px
+        height: 98.4px
+        opacity: 1
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        z-index: 4
+        background: url(../img/about/play-btn.svg) center no-repeat
+        background-size: cover
+        @include anime(0.2s, 0s)
+        &:hover
+            opacity: .9
+        @media (max-width: $md4)
+            width: 77.6px
+            height: 78.4px
+
+    &__content
+        max-width: 335px
+
+.content-about
+
+    &__title
+        margin-top: 20px
+        margin-bottom: 10px
+
+    &__text
+        margin-bottom: 50px
+        @media (max-width: $md3)
+            margin-bottom: 30px
+
+    &__list
+
+.content-list
+
+    &__item
+        display: flex
+        margin-bottom: 30px
+        &:last-child
+            margin-bottom: 0
+
+    &__icon
+        font-size: 32px
+        line-height: 32px
+        margin-right: 20px
+        color: $primary-color
+        @media (max-width: $md4)
+            font-size: 28px
+            line-height: 28px
+
+    &__content
+
+    &__title
+        margin-bottom: 5px
+
+    &__subtitle

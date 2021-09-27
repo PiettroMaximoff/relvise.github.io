@@ -1,0 +1,83 @@
+.getintouch
+    padding: 80px 0 148px
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    @media (max-width: $md2)
+        padding: 50px 0 80px
+    @media (max-width: $md3)
+        padding: 30px 0 40px
+
+    &__container
+
+    &__title
+        margin-bottom: 10px
+
+    &__text
+        display: inline-block
+        max-width: 470px
+        margin-bottom: 80px
+        @media (max-width: $md2)
+            margin-bottom: 40px
+
+    &__row
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 393px
+        @media (max-width: $md2)
+            flex-wrap: wrap
+            height: 100%
+
+    &__block
+
+.block-getintouch
+    flex: 0 1 329px
+    background-color: $light-text-color
+    padding: 50px 40px
+    @include anime(0.3s, 0s)
+    @media (max-width: $md2)
+        margin: 0 5px 15px
+
+    &.active
+        color: $light-text-color
+        background-color: $text-color
+        padding: 80px 40px
+        .block-getintouch__icon
+            color: $light-text-color
+        .block-getintouch__email
+            a
+                color: $light-text-color
+        .block-getintouch__btn
+            color: $light-text-color
+            border: 1px solid $light-text-color
+            &:hover
+                color: $primary-color
+                border: 1px solid $primary-color
+
+    &__icon
+        color: $secondary-color-1
+        font-size: 72px
+        line-height: 72px
+        margin-bottom: 15px
+        @include anime(0.3s, 0s)
+        @media (max-width: $md4)
+            font-size: 52px
+            line-height: 52px
+
+    &__email
+        margin-bottom: 15px
+        a
+            color: $text-color
+
+    &__subtitle
+        margin-bottom: 15px
+
+    &__btn
+        color: $primary-color
+        background-color: inherit
+        padding: 10px 20px
+        border: 1px solid $primary-color
+        border-radius: 5px
+        @include anime(0.2s, 0s)

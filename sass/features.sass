@@ -1,0 +1,48 @@
+.features
+
+    &__block
+        flex: 0 1 328px
+        max-width: 328px
+        padding: 35px 40px
+        background-color: $light-text-color
+        margin: 0 5px 15px
+        @media (max-width: 1023px)
+            padding: 30px 35px
+            max-width: 300px
+        @media (max-width: $md3)
+            padding: 25px 25px
+            flex: 0 0 100%
+        @media (max-width: $md4)
+            max-width: 260px
+
+        &_green
+            background-color: $secondary-color-1
+            color: $light-text-color
+
+    &__icon
+        color: $secondary-color-1
+        font-size: 48px
+        line-height: 48px
+        margin-bottom: 10px
+        &_green
+            color: $light-text-color
+        @media (max-width: $md4)
+            font-size: 36px
+            line-height: 36px
+            margin-bottom: 5px
+
+    &__title
+        color: $text-color
+        margin-bottom: 10px
+        &_green
+            color: $light-text-color
+        @media (max-width: $md4)
+            margin-bottom: 5px
+
+    &__text
+        color: $second-text-color
+        max-width: 224px
+        &_green
+            color: $light-text-color
+        @media (max-width: $md4)
+            max-width: 240px
